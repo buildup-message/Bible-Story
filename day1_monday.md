@@ -1,192 +1,63 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 1: 내가 먼저 가라사대 하던 삶</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <!-- 
-    Palette: "Brilliant Blues & Golden Light" 
-    Confirming NO SVG and NO MERMAID JS were used.
-    Relationship design inspired by chalkboard image.
-    -->
-    <style>
-        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f8fafc; }
-        .chalkboard { background-color: #2d3748; border: 8px solid #4a5568; border-radius: 1rem; box-shadow: inset 0 0 20px rgba(0,0,0,0.5); }
-        .chalk-text { font-family: 'Nanum Pen Script', cursive; font-size: 1.8rem; line-height: 1.2; }
-        .chart-container { position: relative; width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; height: 320px; max-height: 400px; }
-        .input-focus:focus-within { border-color: #3b82f6; background-color: #eff6ff; }
-    </style>
-</head>
-<body class="text-slate-800">
+[Day 1] 월요일: 내가 먼저 "가라사대" 하던 삶
 
-    <!-- Hero Header -->
-    <header class="bg-blue-900 text-white py-14 px-6 text-center">
-        <p class="text-blue-300 font-bold tracking-widest mb-2 uppercase">Monday Reflection</p>
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">내가 먼저 "가라사대" 하던 삶</h1>
-        <div class="w-16 h-1 bg-yellow-400 mx-auto rounded-full"></div>
-    </header>
+오늘의 본문: 창세기 1장 1절
 
-    <main class="max-w-2xl mx-auto px-6 py-12 space-y-16">
-        
-        <!-- Intro & Chart Section -->
-        <section class="space-y-6">
-            <div class="border-l-4 border-blue-600 pl-4">
-                <h2 class="text-2xl font-bold text-slate-900">1. 마음 열기: 통제의 리모컨</h2>
-            </div>
-            <p class="text-slate-600 leading-relaxed">
-                주일 예배의 '가라사대' 게임을 기억하시나요? 하나님의 말씀보다 나의 예측과 익숙함에 더 빠르게 반응하는 우리의 본성을 직면해 봅니다. 내 인생의 주도권을 내가 쥐고 먼저 움직이려 할 때, 우리 영혼은 어떤 상태가 될까요?
-            </p>
-            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100">
-                <div class="chart-container">
-                    <canvas id="mainChart"></canvas>
-                </div>
-                <p class="text-center text-sm text-slate-400 mt-4 italic">영적 통제권에 따른 심리적 지표 변화</p>
-            </div>
-        </section>
+오늘의 핵심어: 직면, 고아의 영성, 항복
 
-        <!-- Scripture Section -->
-        <section class="bg-blue-50 p-8 rounded-3xl space-y-6">
-            <h2 class="text-xl font-bold text-blue-900">2. 슬로 리딩 (Slow Reading)</h2>
-            <div class="text-center space-y-2 py-4">
-                <p class="text-2xl font-serif text-slate-700 italic">"태초에 하나님이 천지를 창조하시니라"</p>
-                <p class="text-blue-600 font-medium">(창세기 1:1)</p>
-            </div>
-            <div class="space-y-2">
-                <p class="text-sm font-bold text-blue-800 tracking-tight">나의 필사 (마음으로 새기며 입력하세요)</p>
-                <textarea class="w-full rounded-2xl p-4 border-2 border-blue-100 focus:outline-none focus:border-blue-500 h-24 shadow-inner" placeholder="말씀을 한 자 한 자 정성껏 입력해 보세요..."></textarea>
-            </div>
-        </section>
+1. 마음 열기 (Warming Up)
 
-        <!-- Thinking Section -->
-        <section class="space-y-10">
-            <div class="border-l-4 border-blue-600 pl-4">
-                <h2 class="text-2xl font-bold text-slate-900">3. 깊은 묵상 (Deep Thinking)</h2>
-            </div>
+주일 예배 시간에 함께 했던 '가라사대' 게임을 기억하십니까?
+분명히 "하나님 가라사대"라는 말이 떨어질 때만 움직여야 한다는 규칙을 알면서도, 우리는 너무나 쉽게 내 예측대로 먼저 손을 올리거나 박수를 치고 말았습니다.
 
-            <div class="input-focus transition-all duration-300 border-2 border-transparent p-6 rounded-3xl bg-white shadow-sm space-y-4">
-                <h3 class="font-bold text-lg text-blue-900 italic">Q1. 내가 써 내려가려던 '나의 복음'</h3>
-                <p class="text-slate-600">내 직장과 자녀, 나의 진로를 내 방식대로 통제하려 했던 영역은 어디인가요?</p>
-                <textarea class="w-full bg-slate-50 rounded-xl p-4 focus:outline-none min-h-[120px]" placeholder="정직한 나의 고백..."></textarea>
-            </div>
+이 작은 실수는 단순한 게임의 결과가 아닙니다. 하나님의 말씀이 떨어지기를 기다리기보다, '내가 예측하고, 내가 익숙한 대로, 내가 하고 싶은 대로' 먼저 움직이려는 우리의 뼈아픈 본성을 보여줍니다.
 
-            <div class="input-focus transition-all duration-300 border-2 border-transparent p-6 rounded-3xl bg-white shadow-sm space-y-4">
-                <h3 class="font-bold text-lg text-blue-900 italic">Q2. 자발적 고아의 영성이 가져온 결과</h3>
-                <p class="text-slate-600">내 인생을 직접 창조해 보겠다고 발버둥 쳤을 때, 그 결과는 평안이었나요, 아니면 혼돈이었나요?</p>
-                <textarea class="w-full bg-slate-50 rounded-xl p-4 focus:outline-none min-h-[120px]" placeholder="나의 솔직한 감정..."></textarea>
-            </div>
-        </section>
+오늘 하루, 내 인생의 주도권을 내가 쥐고 먼저 움직이려 했던 발걸음을 잠시 멈추고 말씀 앞에 섭니다.
 
-        <!-- Application Section (RE-DESIGNED BASED ON IMAGE) -->
-        <section class="space-y-8">
-            <div class="border-l-4 border-blue-600 pl-4">
-                <h2 class="text-2xl font-bold text-slate-900">4. 삶의 적용: 위대한 항복</h2>
-            </div>
-            
-            <!-- Chalkboard Style UI -->
-            <div class="chalkboard p-8 text-white space-y-8">
-                <div class="text-center mb-6">
-                    <span class="bg-white text-slate-800 px-4 py-1 rounded-full font-bold text-sm">핵심 고백</span>
-                    <h3 class="text-xl md:text-2xl mt-3 chalk-text text-yellow-100">하나님이 창조주시라면, 도대체 나는 누구인가?</h3>
-                </div>
-                
-                <div class="space-y-6 chalk-text border-t border-slate-600 pt-6">
-                    <div class="flex items-center justify-between">
-                        <span class="text-slate-300">하나님이 창조주</span>
-                        <span class="text-2xl">→</span>
-                        <span class="text-yellow-400 font-bold underline underline-offset-8 decoration-1">나는 피조물</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-slate-300">하나님이 주인</span>
-                        <span class="text-2xl">→</span>
-                        <span class="text-yellow-400 font-bold underline underline-offset-8 decoration-1">나는 종/노예</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <span class="text-slate-300">하나님이 왕</span>
-                        <span class="text-2xl">→</span>
-                        <span class="text-yellow-400 font-bold underline underline-offset-8 decoration-1">나는 백성</span>
-                    </div>
-                </div>
-            </div>
+2. 슬로 리딩 (Slow Reading)
 
-            <div class="bg-amber-50 border border-amber-200 p-6 rounded-2xl flex items-start space-x-4">
-                <span class="text-3xl">🎯</span>
-                <div>
-                    <h4 class="font-bold text-amber-900 mb-1">오늘의 결단</h4>
-                    <p class="text-amber-800">불안이 찾아올 때마다 멈추고 고백하세요: <br><span class="text-lg font-bold">"하나님이 내 인생의 창조주이십니다"</span></p>
-                </div>
-            </div>
-        </section>
+오늘의 본문을 눈으로 한 번, 입술을 열어 소리 내어 두 번 천천히 읽어보십시오. 그리고 개인 노트나 아래의 빈칸에 한 글자씩 꾹꾹 눌러 담아 직접 필사해 봅니다.
 
-        <!-- Navigation Buttons -->
-        <nav class="grid grid-cols-2 gap-4 pt-10 border-t border-slate-200">
-            <a href="./index.html" class="flex flex-col items-center justify-center bg-slate-100 hover:bg-slate-200 text-slate-600 py-4 rounded-2xl transition-all">
-                <span class="text-xs font-bold uppercase tracking-widest mb-1 text-slate-400">Main Menu</span>
-                <span class="font-bold text-lg">🏠 홈으로</span>
-            </a>
-            <a href="./day2.html" class="flex flex-col items-center justify-center bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-2xl transition-all shadow-lg shadow-blue-200">
-                <span class="text-xs font-bold uppercase tracking-widest mb-1 text-blue-200">Next Step</span>
-                <span class="font-bold text-lg">화요일 묵상 ➔</span>
-            </a>
-        </nav>
+[창세기 1장 1절]
 
-    </main>
+태초에 하나님이 천지를 창조하시니라
 
-    <footer class="text-center py-16 text-slate-400 text-sm">
-        <p>© 2026 성경공부 교재: 혼돈에서 질서로</p>
-    </footer>
+✏️ 나의 필사:
 
-    <script>
-        const ctx = document.getElementById('mainChart').getContext('2d');
-        
-        // Label wrapping logic (> 16 chars)
-        const labels = [
-            ['내 인생을 내가', '통제하려 할 때'], 
-            ['하나님 말씀에', '항복했을 때']
-        ];
+(여기에 말씀을 직접 적어보세요.)
 
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: labels,
-                datasets: [
-                    {
-                        label: '불안과 혼돈 지수',
-                        data: [88, 12],
-                        backgroundColor: '#f87171',
-                        borderRadius: 8
-                    },
-                    {
-                        label: '영적 안식과 평안',
-                        data: [15, 95],
-                        backgroundColor: '#60a5fa',
-                        borderRadius: 8
-                    }
-                ]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { position: 'bottom', labels: { boxWidth: 12, padding: 20 } },
-                    tooltip: {
-                        callbacks: {
-                            title: function(tooltipItems) {
-                                const item = tooltipItems[0];
-                                let label = item.chart.data.labels[item.dataIndex];
-                                return Array.isArray(label) ? label.join(' ') : label;
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    y: { beginAtZero: true, max: 100, ticks: { display: false }, grid: { display: false } },
-                    x: { grid: { display: false } }
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+3. 깊은 묵상 (Deep Thinking)
+
+Q1. 내가 써 내려가려던 '나의 복음'
+'내가 싸워서 쟁취해야만 내 것이다'라는 세상의 경쟁 속에 속아, 하나님 없이 내가 내 인생을 직접 창조해 보겠다고 발버둥 친 적이 있습니까? 하나님이 말씀하시기도 전에 "내가 가라사대, 내 직장과 내 자녀는 내 방식대로 해야 살아남아!"라며 고집을 부렸던 영역은 어디인지 정직하게 적어봅시다.
+
+✍️ 나의 고백:
+
+Q2. 자발적 고아의 영성이 가져온 결과
+내 인생의 1장 1절을 직접 창조해 보겠다고 발버둥 쳤을 때, 그 결과는 참된 평안이었습니까? 아니면 언제 무너질지 모르는 혼돈(토후)과 텅 빈 공허(보후)였습니까? 내가 통제하려다 도리어 마음의 불안이 커졌던 최근의 경험을 떠올려 보며 그 감정을 적어보세요.
+
+✍️ 나의 고백:
+
+4. 삶의 적용과 결단 (Application)
+
+애굽을 빠져나와 척박한 광야를 헤매던 이스라엘 백성들은 내 힘으로 통제할 수 있는 것이 아무 창조주를 원망했습니다. 그런 그들에게 모세는 선언했습니다. "하나님이 창조주이시다!"
+
+이 짧은 선언은 위대한 항복의 선언입니다.
+
+하나님이 창조주이시면, 나는 피조물입니다.
+
+하나님이 주인이시라면, 나는 종/노예입니다.
+
+하나님이 왕이시라면, 나는 백성입니다.
+
+오늘 하루, 꽉 쥐고 있던 내 인생의 리모컨을 하나님께 반납하기로 결단합시다.
+
+🎯 오늘의 실천:
+오늘 하루 동안 마음속에 불안이나 염려가 찾아올 때마다, 하던 일을 잠시 멈추고 속으로 "하나님이 내 인생의 창조주이십니다"라고 3번 반복해서 고백해 봅시다.
+
+5. 오늘의 기도 (Prayer)
+
+(아래의 기도문을 소리 내어 읽으며, 빈칸에 자신의 구체적인 상황을 넣어 기도합시다.)
+
+"주님, 자녀의 인생, 나의 진로, 우리 가정의 재정 문제 등 [ ________________________ ]을(를) 내 뜻대로 창조해 보려 했던 교만을 회개합니다. 하나님 없이 내 힘으로 살아남으려 했던 고아의 영성을 이 시간 십자가 앞에 내려놓습니다. 내가 꽉 쥐고 있던 통제권과 리모컨을 주님께 반납하오니, 창조주 하나님의 다스림 앞에 철저히 항복하는 오늘 하루가 되게 하옵소서. 참된 안식을 주시는 예수님의 이름으로 기도드립니다. 아멘."
+
+⬅️ 메인으로 돌아가기 | ➡️ Day 2 (화요일)로 이동하기
